@@ -5,7 +5,7 @@
 </head>
 <body>
 
-    @livewire('free')
+    @livewire('free',['cname'=>'chitto'])
 
     @livewireScripts
 </body>

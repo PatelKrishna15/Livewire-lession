@@ -1,9 +1,4 @@
 <div>
-    <input  type="text"    wire:model="cname">
-    <input type="checkbox"wire:model="loud" >
-    hello {{ strtoupper($cname) }}@if ($loud) !
-
-
-    @endif
-    <button wire:mouseEnter="resetName('Bingo')">Reset</button>
+    <input wire:model="cname" type="text">
+    hello {{ $cname}}
 </div>
