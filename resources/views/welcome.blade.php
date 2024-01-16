@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <title>Your Laravel Livewire App</title>
     @livewireStyles
 </head>
-
 <body>
-    @livewire('counter')
+
+    @livewire('free')
+
     @livewireScripts
 </body>
-
 </html>
