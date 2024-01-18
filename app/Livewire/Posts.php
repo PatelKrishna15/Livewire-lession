@@ -14,5 +14,25 @@ class Posts extends Component
         $this->posts =Post::latest()->get();
         return view('livewire.posts');
     }
+    
+    private function resetInputFields(){
+        $this->title = '';
+        $this->description = '';
+    }
+
+    public function store()
+    {
+        $validatedDate = $this->validate([
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+  
+        Post::create($validatedDate);
+  
+        session()->flash('message', 'Post Created Successfully.');
+  
+        $this->resetInputFields();
+    }
+  
    
 }

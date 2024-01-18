@@ -1,6 +1,6 @@
 <div>
-  sdg
-    {{-- @if (session()->has('message'))
+  
+    @if (session()->has('message'))
         <div class="alert alert-success">
             {{ session('message') }}
         </div>
@@ -34,5 +34,5 @@
             </tr>
             @endforeach
         </tbody>
-    </table> --}}
+    </table>
 </div>
